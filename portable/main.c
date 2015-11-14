@@ -1,16 +1,3 @@
-/* Much faster when using a fixed array */
-
-/* Actually one way to speed this up is to
- create a more elaborate look-up table
- which precomputes two to three operations
- down -- notice that if we are high up 
- then two operations down are entirely
- predictable given suitable input... */
-
-/* ISSUES: Count off by +/- 1 in some instances */
-/* Speed has been improved by a factor of 2 thanks
-   to the use of the init variable */
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
